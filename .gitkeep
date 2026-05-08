@@ -1,0 +1,4 @@
+echo "" > uploads/students/.gitkeep
+echo "" > uploads/teachers/.gitkeep
+echo "" > uploads/qrcodes/.gitkeep
+echo "" > logs/.gitkeep

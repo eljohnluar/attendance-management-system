@@ -1,0 +1,18 @@
+========================================
+Time: 2026-05-02 13:30:01
+To: eljohn.luar04@gmail.com
+Subject: Your Login Authentication Code
+Error: SMTP Error: Could not connect to SMTP host. Failed to connect to server SMTP server error: Failed to connect to server SMTP code: 10061 Additional SMTP info: No connection could be made because the target machine actively refused it
+SMTP Host: 127.0.0.1
+SMTP Port: 25
+Body:
+
+                <h2>Smart Attendance Login Code</h2>
+                <p>Hi <strong>Eljohn Rebaño</strong>,</p>
+                <p>Your authentication code is:</p>
+                <h1 style='letter-spacing: 4px; color: #ff69b4;'>368542</h1>
+                <p>This code will expire in 5 minutes.</p>
+                <p>If you did not attempt to login, you can ignore this email.</p>
+            
+========================================
+

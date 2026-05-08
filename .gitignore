@@ -1,0 +1,30 @@
+echo "# Environment variables and sensitive data" > .gitignore
+echo ".env" >> .gitignore
+echo ".env.local" >> .gitignore
+echo ".env.production" >> .gitignore
+echo "" >> .gitignore
+echo "# Uploaded files" >> .gitignore
+echo "uploads/students/*" >> .gitignore
+echo "uploads/teachers/*" >> .gitignore
+echo "uploads/qrcodes/*" >> .gitignore
+echo "!uploads/students/.gitkeep" >> .gitignore
+echo "!uploads/teachers/.gitkeep" >> .gitignore
+echo "!uploads/qrcodes/.gitkeep" >> .gitignore
+echo "" >> .gitignore
+echo "# Logs" >> .gitignore
+echo "logs/*.log" >> .gitignore
+echo "logs/*.html" >> .gitignore
+echo "!logs/.gitkeep" >> .gitignore
+echo "" >> .gitignore
+echo "# Composer dependencies" >> .gitignore
+echo "vendor/" >> .gitignore
+echo "composer.lock" >> .gitignore
+echo "" >> .gitignore
+echo "# IDE files" >> .gitignore
+echo ".vscode/" >> .gitignore
+echo ".idea/" >> .gitignore
+echo "" >> .gitignore
+echo "# OS files" >> .gitignore
+echo ".DS_Store" >> .gitignore
+echo "Thumbs.db" >> .gitignore
+echo "desktop.ini" >> .gitignore

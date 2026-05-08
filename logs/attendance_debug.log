@@ -1,0 +1,62 @@
+[02-May-2026 10:55:41 Asia/Manila] === ATTENDANCE DEBUG ===
+[02-May-2026 10:55:41 Asia/Manila] Identifier received: 36
+[02-May-2026 10:55:41 Asia/Manila] Method: qr
+[02-May-2026 10:55:41 Asia/Manila] Captured by: 
+[02-May-2026 10:55:41 Asia/Manila] Student found: ID=36, Name=Shinobu, QR=36|qrcodes/qr_student_36.png
+[02-May-2026 10:55:41 Asia/Manila] Current time: 10:55:41, Date: 2026-05-02
+[02-May-2026 10:55:41 Asia/Manila] Determined period: morning_in
+[02-May-2026 10:55:41 Asia/Manila] Already recorded for this period? NO
+[02-May-2026 10:55:41 Asia/Manila] Status: late
+[02-May-2026 10:55:41 Asia/Manila] SUCCESS: Attendance inserted successfully!
+[06-May-2026 14:23:16 Asia/Manila] === ATTENDANCE DEBUG ===
+[06-May-2026 14:23:16 Asia/Manila] Identifier received: '35|qrcodes/qr_student_35.png'
+[06-May-2026 14:23:16 Asia/Manila] Identifier length: 28
+[06-May-2026 14:23:16 Asia/Manila] Method: qr
+[06-May-2026 14:23:16 Asia/Manila] Captured by: 
+[06-May-2026 14:23:16 Asia/Manila] === DATABASE STUDENTS SAMPLE ===
+[06-May-2026 14:23:16 Asia/Manila] Student ID: 1, Name: Alice Mendoza, QR: STU_STU001
+[06-May-2026 14:23:16 Asia/Manila] Student ID: 2, Name: Benjamin Torres, QR: STU_STU002
+[06-May-2026 14:23:16 Asia/Manila] Student ID: 3, Name: Catherine Flores, QR: STU_STU003
+[06-May-2026 14:23:16 Asia/Manila] Student ID: 4, Name: Daniel Santos, QR: STU_STU004
+[06-May-2026 14:23:16 Asia/Manila] Student ID: 5, Name: Elena Villanueva, QR: STU_STU005
+[06-May-2026 14:23:16 Asia/Manila] ERROR: Student not found for identifier: '35|qrcodes/qr_student_35.png'
+[06-May-2026 15:11:19 Asia/Manila] === ATTENDANCE DEBUG ===
+[06-May-2026 15:11:19 Asia/Manila] Identifier received (raw): '34'
+[06-May-2026 15:11:19 Asia/Manila] Identifier used (normalized): '34'
+[06-May-2026 15:11:19 Asia/Manila] Identifier length: 2
+[06-May-2026 15:11:19 Asia/Manila] Normalization steps: none
+[06-May-2026 15:11:19 Asia/Manila] Method: qr
+[06-May-2026 15:11:19 Asia/Manila] Captured by: 
+[06-May-2026 15:11:19 Asia/Manila] === DATABASE STUDENTS SAMPLE ===
+[06-May-2026 15:11:19 Asia/Manila] Student ID: 1, Name: Alice Mendoza, QR: STU_STU001
+[06-May-2026 15:11:19 Asia/Manila] Student ID: 2, Name: Benjamin Torres, QR: STU_STU002
+[06-May-2026 15:11:19 Asia/Manila] Student ID: 3, Name: Catherine Flores, QR: STU_STU003
+[06-May-2026 15:11:19 Asia/Manila] Student ID: 4, Name: Daniel Santos, QR: STU_STU004
+[06-May-2026 15:11:19 Asia/Manila] Student ID: 5, Name: Elena Villanueva, QR: STU_STU005
+[06-May-2026 15:11:19 Asia/Manila] Found by ID: Henry Lopez
+[06-May-2026 15:11:19 Asia/Manila] Student found via by_id: ID=34, Name=Henry Lopez
+[06-May-2026 15:11:19 Asia/Manila] Current time: 15:11:19, Date: 2026-05-06
+[06-May-2026 15:11:19 Asia/Manila] Determined period: afternoon_in
+[06-May-2026 15:11:19 Asia/Manila] Already recorded for this period? NO
+[06-May-2026 15:11:19 Asia/Manila] Status: on_time
+[06-May-2026 15:11:19 Asia/Manila] SUCCESS: Attendance inserted successfully!
+[06-May-2026 16:09:18 Asia/Manila] === ATTENDANCE DEBUG ===
+[06-May-2026 16:09:18 Asia/Manila] Identifier received (raw): '36'
+[06-May-2026 16:09:18 Asia/Manila] Identifier used (normalized): '36'
+[06-May-2026 16:09:18 Asia/Manila] Identifier length: 2
+[06-May-2026 16:09:18 Asia/Manila] Normalization steps: none
+[06-May-2026 16:09:18 Asia/Manila] Method: qr
+[06-May-2026 16:09:18 Asia/Manila] Captured by: 
+[06-May-2026 16:09:18 Asia/Manila] === DATABASE STUDENTS SAMPLE ===
+[06-May-2026 16:09:18 Asia/Manila] Student ID: 1, Name: Alice Mendoza, QR: STU_STU001
+[06-May-2026 16:09:18 Asia/Manila] Student ID: 2, Name: Benjamin Torres, QR: STU_STU002
+[06-May-2026 16:09:18 Asia/Manila] Student ID: 3, Name: Catherine Flores, QR: STU_STU003
+[06-May-2026 16:09:18 Asia/Manila] Student ID: 4, Name: Daniel Santos, QR: STU_STU004
+[06-May-2026 16:09:18 Asia/Manila] Student ID: 5, Name: Elena Villanueva, QR: STU_STU005
+[06-May-2026 16:09:18 Asia/Manila] Found by ID: Eljohn Rebaño
+[06-May-2026 16:09:18 Asia/Manila] Student found via by_id: ID=36, Name=Eljohn Rebaño
+[06-May-2026 16:09:18 Asia/Manila] Current time: 16:09:18, Date: 2026-05-06
+[06-May-2026 16:09:18 Asia/Manila] Determined period: afternoon_in
+[06-May-2026 16:09:18 Asia/Manila] Already recorded for this period? NO
+[06-May-2026 16:09:18 Asia/Manila] Status: on_time
+[06-May-2026 16:09:18 Asia/Manila] SUCCESS: Attendance inserted successfully!
