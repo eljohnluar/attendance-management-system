@@ -1,83 +1,92 @@
-# Smart Attendance System
+# Attendance Management System
 
-A comprehensive attendance management system with QR code scanning, RFID support, and SMS notifications.
+A comprehensive school attendance management system with QR code and RFID support - developed as a school project.
+
+## About The Project
+
+This system was developed as a school project to modernize attendance tracking in educational institutions. It replaces traditional paper-based attendance with a digital solution using QR codes and RFID technology.
 
 ## Features
 
-- **QR Code & RFID Scanning** - Fast contactless attendance tracking
-- **Real-time Monitoring** - Live attendance display
-- **SMS Notifications** - Direct parent communication
-- **Comprehensive Reports** - Exportable attendance reports
-- **Role-based Access** - Admin and Teacher panels
-- **Mobile Responsive** - Works on all devices
+- **Multi-role System** - Admin, Teacher, and Student portals with role-based access
+- **QR Code & RFID Scanning** - Fast contactless attendance marking
+- **Real-time Monitoring** - Live attendance tracking display for classrooms
+- **SMS Broadcasting** - Send instant notifications to parents/guardians
+- **Reports & Analytics** - Generate attendance reports with interactive charts
+- **Student Management** - Manage student records and optional login accounts
+- **Email Notifications** - (Optional) Email alerts for login and verification
 
 ## Tech Stack
 
-- PHP 7.4+
-- MySQL
-- HTML5/CSS3
-- JavaScript/jQuery
-- Bootstrap
+| Technology | Purpose |
+|------------|---------|
+| PHP 7.4+ | Backend logic |
+| MySQL/MariaDB | Database |
+| HTML5/CSS3/JavaScript | Frontend |
+| PHPMailer | Email sending (optional) |
+| html5-qrcode | QR code scanning |
+| Chart.js | Analytics charts |
 
 ## Installation
 
-1. Clone the repository to your web server:
+# 1. Clone the repository
+git clone https://github.com/eljhn/attendance-management-system.git
 
-```bash
-git clone https://github.com/yourusername/smart-attendance.git
-Import the database:
+# 2. Import database
+mysql -u root -p < sql/database.sql
 
-Open phpMyAdmin
+# 3. Configure database in includes/config.php
+# Update DB_HOST, DB_USER, DB_PASS, DB_NAME
 
-Create database smart_attendance
-
-Import sql/database.sql
-
-Configure database connection:
-
-Edit includes/config.php
-
-Update database credentials
-
-Set up upload directories:
-
-bash
-mkdir uploads/students uploads/teachers uploads/qrcodes
-chmod 755 uploads
-Run password reset script:
-
-Access http://localhost/smart-attendance/reset_passwords.php
-
+# 4. Run setup script (then DELETE it!)
+http://localhost/attendance-management-system/reset_passwords.php
 Default Login Credentials
-Role	Username	Password	Auth Code
-Admin	admin	password123	001690
-Teacher	teacher_jreyes	password123	001690
-Folder Structure
-text
-smart-attendance/
-├── admin/          # Admin panel pages
-├── teacher/        # Teacher panel pages
-├── api/           # API endpoints
-├── includes/      # Core functions
-├── assets/        # CSS, JS, images
-├── uploads/       # Student/teacher photos, QR codes
-└── sql/           # Database setup
-Quick Start
-Login as Admin: http://localhost/smart-attendance/
+Role	Username	Password
+Admin	admin	password123
+Teacher	teacher_jreyes	password123
+Student	alice.mendoza	password123
+Registration Code: account2026 (for teacher/student registration)
 
-Add students and generate QR codes
+# Project Structure
 
-Scan QR codes using the scanner page
+smart_attendance_system/
 
-View attendance reports
+├── admin/          # Admin panel (accounts, reports, SMS)
 
-Requirements
-XAMPP/WAMP/LAMP
+├── teacher/        # Teacher panel (students, attendance, reports)
 
-PHP GD Library (for QR codes)
+├── student/        # Student panel (profile, QR, schedule)
 
-allow_url_fopen enabled (for Google Charts API)
+├── api/            # AJAX endpoints for scanner and data
 
-License
-MIT
-```
+├── includes/       # Core configuration and functions
+
+├── assets/         # CSS stylesheets and images
+
+├── sql/            # Database schema
+
+└── uploads/        # User uploaded photos and QR codes
+
+# Key Functionalities by Role
+Role	Capabilities
+Admin	Full system control, manage users, approve accounts, send broadcasts, view all reports
+Teacher	Manage assigned students, take attendance, view class reports, send SMS to parents
+Student	View personal attendance, download QR code, update profile, view schedule
+
+# System Preview
+Login Page - Role-based login (Admin/Teacher/Student)
+
+Dashboard - Statistics and charts for each role
+
+QR Scanner - Public page for attendance marking via QR/RFID
+
+Monitor Display - Real-time attendance viewing for classrooms
+
+# Future Improvements
+Mobile application for students and teachers
+
+Biometric (fingerprint) attendance option
+
+Export reports to PDF/Excel
+
+Parent portal for monitoring child's attendance
